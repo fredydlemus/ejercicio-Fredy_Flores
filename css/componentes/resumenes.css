@@ -37,6 +37,7 @@
 
 .resumen .resumen__general .resumen__general--datos .linea-espacio {
   width: 50%;
+  margin-right: 15px;
 }
 
 .resumen .resumen__general .resumen__general--efectividad {
@@ -44,10 +45,6 @@
   width: 100%;
   justify-content: space-between;
   font-size: 18px;
-}
-
-.resumen .resumen__general .linea-espacio {
-  margin-right: 15px;
 }
 
 .resumen .resumen__general .enviados .linea-espacio {
@@ -182,4 +179,43 @@
 
 .resumen .resumen__especifico .respondidos .resumen__especifico__caja--parafos {
   border-left: 2px solid var(--Amarillo);
+}
+
+/*-------------- media querys ---------------- */
+@media screen and (max-width: 1024px) {
+  .resumen .resumen__general .resumen__general--datos .linea-espacio {
+    width: 35%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .resumen {
+    flex-direction: column;
+  }
+  .resumen .resumen__general {
+    width: 100%;
+  }
+  .resumen .resumen__general .resumen__general--datos .linea-espacio {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .resumen .resumen__especifico {
+    grid-template-columns: auto;
+  }
+
+  .resumen .resumen__especifico .resumen__especifico__caja--parafos {
+    width: auto;
+    flex-wrap: nowrap;
+    align-items: flex-end;
+  }
+
+  .resumen
+    .resumen__especifico
+    .resumen__especifico__caja--parafos
+    p:first-child {
+    margin-bottom: 0;
+    margin-right: 10px;
+  }
 }

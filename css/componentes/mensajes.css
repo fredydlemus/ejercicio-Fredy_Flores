@@ -9,12 +9,9 @@
   padding: 20px;
 }
 
-.mensajes .mensajes--titulo {
-}
-
 .mensajes .mensajes__categoria {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: 1fr 1fr 1.2fr 1fr 1fr 1fr;
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 20px;
@@ -42,16 +39,12 @@
 
 .mensajes .mensajes__tabla .mensajes__tabla__mensaje {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: 1fr 1fr 1.2fr 1fr 1fr 1fr;
   align-items: center;
   padding: 15px;
   border-radius: 10px;
   background-color: var(--Gris-suave);
   margin-bottom: 10px;
-  /* padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 20px;
-  padding-bottom: 10px; */
 }
 
 .mensajes .mensajes__tabla .mensajes__tabla__mensaje--fecha p {
@@ -74,6 +67,10 @@
   height: 10px;
 }
 
+.mensajes .mensajes__tabla .mensajes__tabla__mensaje--etiquetas {
+  display: flex;
+}
+
 .mensajes .mensajes__tabla .mensajes__tabla__mensaje--etiquetas a {
   text-decoration: none;
   background-color: #f8eae7;
@@ -86,4 +83,49 @@
 .mensajes .mensajes__tabla .mensajes__tabla__mensaje--acciones a {
   color: black;
   font-weight: 600;
+}
+
+/*-------------- media querys ---------------- */
+@media screen and (max-width: 1024px) {
+  .mensajes .mensajes__tabla .mensajes__tabla__mensaje--etiquetas a {
+    margin-right: 5px;
+  }
+
+  .mensajes .mensajes__categoria {
+    grid-template-columns: 1.2fr 1.2fr 1.5fr 1fr 0.9fr 1fr;
+  }
+
+  .mensajes .mensajes__tabla .mensajes__tabla__mensaje {
+    grid-template-columns: 1.2fr 1.2fr 1.5fr 1fr 0.9fr 1fr;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .mensajes .mensajes__tabla .mensajes__tabla__mensaje--acciones {
+    display: none;
+  }
+
+  .mensajes .mensajes__categoria p:last-child {
+    display: none;
+  }
+
+  .mensajes .mensajes__categoria {
+    grid-template-columns: 1.5fr 1.2fr 1.3fr 0.9fr 0.4fr;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  .mensajes .mensajes__categoria p:nth-child(5) {
+    display: none;
+  }
+
+  .mensajes .mensajes__tabla .mensajes__tabla__mensaje {
+    grid-template-columns: 1.5fr 1.2fr 1.3fr 0.9fr 0.4fr;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .mensajes .mensajes__tabla .mensajes__tabla__mensaje--fecha p:last-child {
+    display: none;
+  }
 }
