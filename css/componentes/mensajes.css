@@ -135,4 +135,22 @@
     margin-left: 15px;
     margin-right: 15px;
   }
+
+  .mensajes .mensajes__categoria {
+    display: none;
+  }
+
+  .mensajes .mensajes__tabla .mensajes__tabla__mensaje {
+    grid-template-columns: 4fr 1fr;
+    grid-template-rows: 2fr 1fr 1fr;
+    gap: 5px;
+  }
+
+  .mensajes
+    .mensajes__tabla
+    .mensajes__tabla__mensaje
+    .mensajes__tabla__mensaje--nuevo-modelo
+    p {
+    font-weight: 600;
+  }
 }
