@@ -12,7 +12,7 @@
 
 .resumen .resumen__general {
   width: 30%;
-  max-width: 375px;
+  max-width: 450px;
   height: auto;
   background-color: var(--Gris-suave);
   padding-top: 15px;
@@ -202,8 +202,8 @@
 
 @media screen and (max-width: 450px) {
   .resumen {
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
   .resumen .resumen__especifico {
     grid-template-columns: auto;
