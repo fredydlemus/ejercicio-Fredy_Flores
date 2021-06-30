@@ -1,8 +1,8 @@
 .resumen {
   display: flex;
-  gap: 30px;
+  gap: 25px;
   width: 100%;
-  border: 1px solid gray;
+
   height: auto;
   padding-left: 40px;
   padding-right: 40px;
@@ -11,7 +11,8 @@
 /*------------------- resumen general -------------*/
 
 .resumen .resumen__general {
-  min-width: 375px;
+  width: 30%;
+  max-width: 375px;
   height: auto;
   background-color: var(--Gris-suave);
   padding-top: 15px;
@@ -35,14 +36,14 @@
 }
 
 .resumen .resumen__general .resumen__general--datos .linea-espacio {
-  width: 150px;
+  width: 50%;
 }
 
 .resumen .resumen__general .resumen__general--efectividad {
   display: flex;
   width: 100%;
   justify-content: space-between;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .resumen .resumen__general .linea-espacio {
@@ -68,13 +69,117 @@
 .resumen .resumen__especifico {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 30px;
+  gap: 20px;
   height: auto;
   width: 100%;
 }
 
 .resumen .resumen__especifico .resumen__especifico__caja {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  align-items: center;
   height: 100%;
   background-color: var(--Gris-suave);
   border-radius: 10px;
+}
+
+.resumen .resumen__especifico .resumen__especifico__caja--img {
+  width: 100%;
+}
+
+.resumen .resumen__especifico .resumen__especifico__caja--img img {
+  display: block;
+  margin: 0 auto;
+  width: 30px;
+  margin-bottom: 15px;
+}
+
+.resumen .resumen__especifico .resumen__especifico__caja--parafos {
+  display: flex;
+  flex-wrap: wrap;
+
+  padding-left: 10px;
+  width: 85%;
+  margin: 0 auto;
+  font-size: 16px;
+}
+.resumen .resumen__especifico .resumen__especifico__caja--parafos p {
+  display: inline-block;
+}
+
+.resumen
+  .resumen__especifico
+  .resumen__especifico__caja--parafos
+  p:first-child {
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+.resumen
+  .resumen__especifico
+  .resumen__especifico__caja--parafos
+  p:nth-child(2) {
+  font-size: 25px;
+  font-weight: bold;
+  margin-right: 10px;
+  align-self: flex-end;
+  line-height: 1;
+}
+
+.resumen
+  .resumen__especifico
+  .enviados
+  .resumen__especifico__caja--parafos
+  p:last-child {
+  color: var(--azul);
+}
+
+.resumen
+  .resumen__especifico
+  .recibidos
+  .resumen__especifico__caja--parafos
+  p:last-child {
+  color: var(--verde);
+}
+
+.resumen
+  .resumen__especifico
+  .no-recibidos
+  .resumen__especifico__caja--parafos
+  p:last-child {
+  color: var(--Rojo);
+}
+
+.resumen
+  .resumen__especifico
+  .respondidos
+  .resumen__especifico__caja--parafos
+  p:last-child {
+  color: var(--Amarillo);
+}
+
+.resumen .resumen__especifico .resumen__especifico__caja--parafos p:last-child {
+  align-self: flex-end;
+}
+
+.resumen .resumen__especifico .enviados .resumen__especifico__caja--parafos {
+  border-left: 2px solid var(--azul);
+}
+
+.resumen .resumen__especifico .recibidos .resumen__especifico__caja--parafos {
+  border-left: 2px solid var(--verde);
+}
+
+.resumen
+  .resumen__especifico
+  .no-recibidos
+  .resumen__especifico__caja--parafos {
+  border-left: 2px solid var(--Rojo);
+}
+
+.resumen .resumen__especifico .respondidos .resumen__especifico__caja--parafos {
+  border-left: 2px solid var(--Amarillo);
 }
