@@ -1,0 +1,80 @@
+.resumen {
+  display: flex;
+  gap: 30px;
+  width: 100%;
+  border: 1px solid gray;
+  height: auto;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+/*------------------- resumen general -------------*/
+
+.resumen .resumen__general {
+  min-width: 375px;
+  height: auto;
+  background-color: var(--Gris-suave);
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-right: 30px;
+  padding-left: 30px;
+  border-radius: 10px;
+  font-size: 12px;
+}
+
+.resumen .resumen__general .resumen__general--datos {
+  display: flex;
+  width: 100%;
+  justify-content: start;
+  margin-bottom: 10px;
+}
+
+.resumen .resumen__general .resumen__general--datos p:first-child {
+  margin: auto;
+  margin-left: 0;
+}
+
+.resumen .resumen__general .resumen__general--datos .linea-espacio {
+  width: 150px;
+}
+
+.resumen .resumen__general .resumen__general--efectividad {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  font-size: 20px;
+}
+
+.resumen .resumen__general .linea-espacio {
+  margin-right: 15px;
+}
+
+.resumen .resumen__general .enviados .linea-espacio {
+  border-bottom: 2px solid var(--azul);
+}
+.resumen .resumen__general .recibidos .linea-espacio {
+  border-bottom: 2px solid var(--verde);
+}
+.resumen .resumen__general .no-recibidos .linea-espacio {
+  border-bottom: 2px solid var(--Rojo);
+}
+
+.resumen .resumen__general .respondidos .linea-espacio {
+  border-bottom: 2px solid var(--Amarillo);
+}
+
+/* -------resumen especifico -----------------*/
+
+.resumen .resumen__especifico {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 30px;
+  height: auto;
+  width: 100%;
+}
+
+.resumen .resumen__especifico .resumen__especifico__caja {
+  height: 100%;
+  background-color: var(--Gris-suave);
+  border-radius: 10px;
+}
