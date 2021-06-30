@@ -213,6 +213,7 @@
     padding-left: 15px;
     padding-right: 15px;
     gap: 0;
+    min-height: 710px;
   }
 
   .resumen .resumen__general {
