@@ -222,6 +222,7 @@
   }
   .resumen .resumen__especifico {
     grid-template-columns: auto;
+    height: 100%;
   }
 
   .resumen .resumen__especifico .resumen__especifico__caja--parafos {
