@@ -1,5 +1,6 @@
 @import "componentes/header.css";
 @import "componentes/resumenes.css";
+@import "componentes/mensajes.css";
 
 :root {
   --azul: #2da2da;
@@ -7,7 +8,7 @@
   --Rojo: #ff0000;
   --Amarillo: #ff9000;
   --Naranja: #f76d4d;
-  --Gris-suave: #f3f3f3;
+  --Gris-suave: #e5e2e2;
 }
 
 * {

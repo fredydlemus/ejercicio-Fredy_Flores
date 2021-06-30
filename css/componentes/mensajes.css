@@ -1,0 +1,89 @@
+.mensajes {
+  border: 3px solid var(--Gris-suave);
+  border-radius: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 40px;
+  margin-right: 40px;
+  height: 100vh;
+  padding: 20px;
+}
+
+.mensajes .mensajes--titulo {
+}
+
+.mensajes .mensajes__categoria {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid gray;
+  width: 100%;
+  font-size: 14px;
+}
+
+.mensajes .mensajes__categoria .mensajes__categoria--flecha {
+  display: inline-block;
+  background-image: url("../../assets/Icons/arrow-down.svg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 10px;
+  height: 10px;
+  margin-left: 10px;
+}
+
+.mensajes .mensajes__tabla {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.mensajes .mensajes__tabla .mensajes__tabla__mensaje {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  align-items: center;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: var(--Gris-suave);
+  margin-bottom: 10px;
+  /* padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 10px; */
+}
+
+.mensajes .mensajes__tabla .mensajes__tabla__mensaje--fecha p {
+  display: inline;
+  margin-right: 10px;
+}
+
+.mensajes .mensajes__tabla .mensajes__tabla__mensaje--verificado p {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.mensajes .mensajes__tabla .mensajes__tabla__mensaje--verificado span {
+  display: inline-block;
+  background-image: url("../../assets/Icons/verified.svg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 10px;
+  height: 10px;
+}
+
+.mensajes .mensajes__tabla .mensajes__tabla__mensaje--etiquetas a {
+  text-decoration: none;
+  background-color: #f8eae7;
+  color: var(--Naranja);
+  padding: 5px;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+
+.mensajes .mensajes__tabla .mensajes__tabla__mensaje--acciones a {
+  color: black;
+  font-weight: 600;
+}
