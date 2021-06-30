@@ -20,7 +20,12 @@
   font-weight: 500;
 }
 
+body {
+  height: auto;
+}
+
 .wrapper {
   max-width: 1500px;
   margin: 0 auto;
+  height: auto;
 }
