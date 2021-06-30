@@ -33,3 +33,10 @@ main {
   margin: 0 auto;
   height: auto;
 }
+
+@media screen and (max-width: 450px) {
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+}
