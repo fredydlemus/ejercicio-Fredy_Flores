@@ -7,6 +7,7 @@
   margin-right: 40px;
   height: auto;
   padding: 20px;
+  position: relative;
 }
 
 .mensajes .mensajes__categoria {
@@ -45,6 +46,12 @@
   border-radius: 10px;
   background-color: var(--Gris-suave);
   margin-bottom: 10px;
+  cursor: pointer;
+  transition-duration: 0.5s;
+}
+
+.mensajes .mensajes__tabla .mensajes__tabla__mensaje:hover {
+  background-color: var(--Gris-suave-hover);
 }
 
 .mensajes .mensajes__tabla .mensajes__tabla__mensaje--fecha p {

@@ -2,7 +2,7 @@
   display: flex;
   gap: 25px;
   width: 100%;
-
+  position: relative;
   height: auto;
   padding-left: 40px;
   padding-right: 40px;
@@ -81,6 +81,12 @@
   height: 100%;
   background-color: var(--Gris-suave);
   border-radius: 10px;
+  cursor: pointer;
+  transition-duration: 0.5s;
+}
+
+.resumen .resumen__especifico .resumen__especifico__caja:hover {
+  transform: scale(1.1);
 }
 
 .resumen .resumen__especifico .resumen__especifico__caja--img {
