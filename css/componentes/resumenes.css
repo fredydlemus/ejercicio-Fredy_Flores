@@ -201,6 +201,10 @@
 }
 
 @media screen and (max-width: 450px) {
+  .resumen {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
   .resumen .resumen__especifico {
     grid-template-columns: auto;
   }
